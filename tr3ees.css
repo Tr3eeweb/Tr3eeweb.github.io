@@ -139,7 +139,7 @@ header {
 .section-features {
   margin-top: -14vh;
   padding: 25rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../image/10043_chroma5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(10043_chroma5.jpg);
   background-size: cover;
   transform: skewY(-7deg); }
   .section-features > * {
@@ -292,7 +292,7 @@ header {
 
 .header {
   height: 55vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../image/10043_chroma5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(10043_chroma5.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
