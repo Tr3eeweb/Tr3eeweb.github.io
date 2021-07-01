@@ -1,0 +1,266 @@
+/*Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485*/
+/*clip-path:polygon(50% 100%, 100% 50%,0% 0,100% 100%); i love this*/
+/*clip-path:polygon(50% 100%, 100% 50%,0% 0,100% 0%);i like this one too */
+*,
+*::after,
+*::before {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: Georgia;
+	font-weight:200 ; 
+	font-size:1.6rem;
+	line-height:1.7;
+	color:#777;
+	padding:3rem;
+
+}
+
+.header{
+	height: 95vh;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(126,213,111,0.8), 
+		rgba(40,180,131,0.8)),
+		url("image/10043_chroma5.jpg");
+	background-size: cover; 
+	background-position: top;
+	clip-path:polygon(0% 0%,100% 0%,100% 75vh, 0% 100%); 
+	position: relative;
+}
+.header__logo-box{
+	position:absolute;
+	top: 2rem;               
+	left:2rem;
+}
+.header__logo{
+	height: 3.5rem;
+
+}
+.header__text-box{
+	/*position for the element the browser take the top left.. to display
+	but that not  what we want to center the prop we just define
+	so we use the property transform to speak to the box and an attribute translaate
+	becuse the element is not taking the parent position but the element position so 
+	the -50 is the x of the element it self and the other -50 is to the height*/
+	position:absolute;
+	top:40%;
+	left:50%;
+	/*border:solid 5px rgba(255,255,255,0);*/
+	transform: translate(-50%,-50%);
+	backface-visibility: hidden;
+	text-align: center;
+	/*margin-bottom: 60px;*/
+
+}
+
+	
+
+}
+.heading-primary{
+	
+	color:#fff;
+	text-transform: uppercase;
+	font-family: Georgia;
+	
+	margin-bottom: 6rem;
+	backface-visibility: hidden;
+	animation-duration: 2s;
+	
+	
+
+
+
+}
+.heading-primary--main{
+	display:block;
+	font-size: 6rem;
+	font-weight: 400;
+	letter-spacing: 1.76rem;
+	animation-name: In-meleft;
+	animation-duration: 2s;
+	align-items: center;
+	color:#fff;
+	animation-timing-function: ease-out;
+	
+}
+
+.heading-primary--sub{
+	display:block;
+	font-weight: 700;
+	font-size: 2.5rem;
+	letter-spacing: .9rem;
+	animation-name: In-meright;
+	animation-duration: 2s;
+	color:#fff;
+	text-transform: uppercase;
+	margin-bottom: 9rem;
+	animation-timing-function: ease-out;
+
+	
+	
+	
+
+
+}
+@keyframes In-meleft{
+	0%{
+		opacity:0;
+		transform:translate(-10rem );
+	}
+	80%{
+		opacity:0.5;
+		transform:translate(1rem);
+	}
+	100%{
+		opacity:1;
+		transform:translate(0);
+	}
+}
+
+@keyframes In-meright{
+	0%{
+		opacity:0;
+		transform:translate(10rem);
+	}
+	80%{
+		opacity:0.5;
+		transform:translate(-1rem);
+	}
+	100%{
+		opacity:1;
+		transform:translate(0);
+	}
+}
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	list-style: none;
+	padding: 1.5rem 4rem;
+	border-radius: 10rem;
+	transition: all .2s;
+	position: relative;
+	font-size:2.6rem; 
+
+/*because the botton is a text and inline block  so i can refrence from the parent class from the top of the file */
+	
+/*the link state goes along with the link 
+the hover state
+the active state*/
+
+
+
+}
+.btn--white{
+	background-color: #fff;
+	color:#777;
+	
+} 
+.btn:hover{
+	/*this allow the botton which css treat like a text to move up
+	the y axis or epsilom increase from the top to the bottom so giving it a 
+	negative value will further take it up*/
+	transform: translateY(-3px);
+	box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+	
+	/*the first attribute is the x and the second is the y the third is the blur
+	 the fourth the color*/
+}
+/*
+the opacity of 0.2 reduce the effect making lively
+*/
+.btn:active{
+	transform: translateY(-1px);
+	box-shadow: 0 .5rem 2rem rgba(0,0,0,0.2);
+	
+	
+}
+/*the after pseudo element we are going to use act like a virtual element
+right after the element that we will be using and we can then style the element */
+/*before we could use the pseudo element to appear on a page we need to specify the 
+pseudo content because that is always necessary. it doesn't matter what it would be, it can even 
+be empty but we have to specify unless it wont't happen and the same thing with the display property */
+@keyframes In-button{
+	0%{
+		opacity:0;
+		transform:translateY(10rem);
+	}
+	
+	100%{
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+.btn::after{
+	content: "";
+	display: inline-block;
+/*becuase the button class we had is inline-block*/
+	height: 100%;
+	width:100%;
+	/*the 100%s works because the after pseudo element is basically treated like
+	a child of the button*/
+	border-radius: 10rem;
+	/*this point here will look as if it's part of our element so let change that
+	so what we want to do is to put it behind our actual button. by doing this we 
+	use the absolute positioning and remember an absolute position suppose to have an refrence 
+	or relative position that it can find so it has to be the button asin the main button*/
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: -1;
+	transition:all 0.4s;
+	
+	
+	/*one more thing we have to do is to set the z-index and we will put it to -1
+	the z-index defines the position of the elements if they are one on top of another*/
+	
+}
+.btn--white::after {
+	background-color:white;
+	
+	
+}
+/*this is an after pseudo element only when we have the button on the hover state
+and what ever we want to happen we can declare it in the after hover class*/
+.btn:hover::after{
+	transform:scaleX(1.4) scaleY(1.6);
+	/*scale is an attribute of transform it has two entry one on the y, and x axis but i want to use
+	only one entry of two (2) meaning double the size*/
+	/* the white part that you see outside here is the pseudo-element that becomes visible as soon as we
+	hover  over the button*/
+
+	/*if you want it to be animated just like before just add the transition property
+	 we do that on the initial state and the inital state for this is the btn::after*/
+
+	opacity:0;
+	 /*that the trick of fading thing out because it going to 0 opa*/
+}
+.btn--special{
+	animation-name:In-button;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-delay: .75s;
+	animation-fill-mode: backwards;
+}
+/*NOTE WE CAN CREAT MULTIPLE CLASS FOR A PARTICULAR OBJECT
+the animation-fil-mode backward will automatically apply to the style up to zero percent before the animation starts
+simply by using the animation fill modeand set it to backwards  the style created will now be applied before the animations start simply by using the 
+ simply by using the animation fill modeand set it to backwards*/
+/*.table__main{
+ 	margin-top: 900px;
+ 	margin-left: 400px;
+ 	padding: 0px;
+ }*/
+ 
