@@ -125,7 +125,8 @@ body {
     .heading-secondary {
       letter-spacing: .5rem;
       font-size: 3rem; 
-      padding-top: 6.5rem;} 
+      padding-top: 13.5rem;} 
+
     }
   .heading-secondary:hover {
     text-shadow: 0.4rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
