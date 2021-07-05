@@ -255,17 +255,18 @@ header {
   margin-top: 50rem;
   margin-top: -20vh; }
 
-.section-features {
-  margin-top: -14vh;
+.section-features1 {
+  margin-top: 4vh;
   padding: 25rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../10043_chroma5.jpg);
   background-size: cover;
-  transform: skewY(-7deg); }
-  .section-features > * {
-    transform: skewY(7deg); }
+   }
+  
   @media (max-width: 90.25rem) {
-    .section-features {
-      padding: 10rem 0; } }
+    .section-features1 {
+      padding: 10rem 0;
+      margin-top: 1vh
+  } }
 
 .section_main {
   background-color: rgba(238, 238, 238, 0.8);
@@ -419,13 +420,16 @@ header {
   animation-fill-mode: backwards; }
 
 .btn1-text:link, .btn1-text:visited {
-  font-size: 1.6rem;
+  font-size: 3.6rem;
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
   padding: .3rem;
-  transition: all .2s; }
+  transition: all .2s; 
+  text-transform: uppercase;
+  font-weight: 700; 
+}
 
 .btn1-text:hover {
   background-color: #55c57a;
@@ -572,7 +576,8 @@ header {
     .client {
       width: 100%;
       padding: 3rem;
-      padding-left: 2rem; } }
+      padding-left: 2rem;
+      transform:skewX(0deg) } }
   @media (max-width: 60.5rem) {
     .client {
       transform: skewX(0); } }

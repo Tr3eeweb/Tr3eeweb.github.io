@@ -481,7 +481,7 @@ header {
     .card__picture1--p2 {
       background-image: url(../markus-winkler-3hBH-ZuvppU-unsplash.jpg); }
     .card__picture1--p3 {
-      background-image: url(../undraw_programming_2svra.png); }
+      background-image: url(../image/undraw_programming_2svra.png); }
   .card__heading1 {
     font-size: 2.8rem;
     font-weight: 300;
@@ -524,8 +524,8 @@ header {
     font-size: 1.6rem;
     text-transform: uppercase; }
   .card__price1--value {
-    font-weight: 100;
-    font-size: 6rem; }
+    font-weight: 10;
+    font-size: 1rem; }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
