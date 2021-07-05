@@ -1,0 +1,80 @@
+.card {
+    height: auto; 
+    border-radius: .3rem;
+    background-color: #fff; 
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+    .card__side {
+      height: auto;
+      transition: all .8s ease;
+      position: relative;
+      width: 100%;
+      backface-visibility: hidden;
+      overflow: hidden;
+      
+      box-shadow: none; }
+      .card__side--front {
+        background-color: #fff; }
+      .card__side--back {
+        background-color: green;
+        transform: rotateY(0deg);
+        clip-path:polygon(0 20%, 100% 0, 100% 100%, 0 100%) ; }
+        .card__side--back {
+          background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+    .card:hover .card__side--front {
+      transform: rotateY(0deg); }
+    .card__picture {
+      background-size: cover;
+      height: 25rem; }
+      .card__picture--p1 {
+        background-image: url(undraw_static_assets_rpm6.png); }
+      .card__picture--p2 {
+        background-image: url(markus-winkler-3hBH-ZuvppU-unsplash.jpg); }
+      .card__picture--p3 {
+        background-image: url(undraw_programming_2svra.png); }
+    .card__heading {
+      font-size: 2.8rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #fff;
+      position: absolute;
+      text-align: right;
+      top: 20rem;
+      right: 0;
+      width: 75%; }
+    .card__heading--span {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone; }
+      .card__heading--span-1 {
+        background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.85), rgba(126, 213, 111, 0.85)); }
+    .card__details {
+      padding: 1rem; }
+      .card__details ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto; }
+        .card__details ul li {
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 1rem; }
+          .card__details ul li:not(:last-child) {
+            border-bottom: 1px solid #eee; }
+    .card__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      text-align: center;
+      padding: 7rem 4rem 4rem 4rem; }
+    .card__price--box {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: white;
+      padding: 4rem; }
+    .card__price--only {
+      font-size: 1.6rem;
+      text-transform: uppercase; }
+    .card__price--value {
+      font-weight: 100;
+      font-size: 6rem; }
+  

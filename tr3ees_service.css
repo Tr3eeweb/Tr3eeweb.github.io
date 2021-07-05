@@ -252,7 +252,7 @@ header {
 .section-features {
   margin-top: -14vh;
   padding: 25rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../undraw_Coding_re_iv62.png);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(undraw_Coding_re_iv62.png);
   background-size: cover;
   transform: skewY(-7deg); }
   .section-features > * {
@@ -287,13 +287,13 @@ header {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(247, 247, 247, 0.81) 0%, rgba(247, 247, 247, 0.81) 50%, transparent 50%), url(../tianyi-ma-WiONHd_zYI4-unsplash.jpg);
+  background-image: linear-gradient(105deg, rgba(247, 247, 247, 0.81) 0%, rgba(247, 247, 247, 0.81) 50%, transparent 50%), url("tianyi-ma-WiONHd_zYI4-unsplash.jpg");
   background-size: cover;
   border-radius: .3rem;
   box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.15); }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(247, 247, 247, 0.81) 0%, rgba(247, 247, 247, 0.81) 65%, transparent 65%), url(../tianyi-ma-WiONHd_zYI4-unsplash.jpg);
+      background-image: linear-gradient(105deg, rgba(247, 247, 247, 0.81) 0%, rgba(247, 247, 247, 0.81) 65%, transparent 65%), url(tianyi-ma-WiONHd_zYI4-unsplash.jpg);
       background-size: cover; } }
   .book__form {
     width: 50%;
@@ -473,15 +473,15 @@ header {
     transform: rotateY(-180deg); }
   .card1:hover .card__side1--back {
     transform: rotateY(0deg); }
-  .card__picture 1{
+  .card__picture1{
     background-size: cover;
     height: 25rem; }
     .card__picture1--p1 {
-      background-image: url(../undraw_static_assets_rpm6.png); }
+      background-image: url("undraw_static_assets_rpm6.png"); }
     .card__picture1--p2 {
-      background-image: url(../markus-winkler-3hBH-ZuvppU-unsplash.jpg); }
+      background-image: url(markus-winkler-3hBH-ZuvppU-unsplash.jpg); }
     .card__picture1--p3 {
-      background-image: url(../undraw_programming_2svra.png); }
+      background-image: url(undraw_programming_2svra.png); }
   .card__heading1 {
     font-size: 2.8rem;
     font-weight: 300;
@@ -723,7 +723,7 @@ header {
 
 .header {
   height: 55vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../undraw_software_engineer_lvl5.png);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(undraw_software_engineer_lvl5.png);
   background-size: cover;
   background-position: top;
   position: relative; }
