@@ -429,7 +429,8 @@ header {
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
   padding: .3rem;
-  transition: all .2s; }
+  transition: all .2s;
+  margin-bottom: .9rem; }
 .btn1-text1:link, .btn1-text1:visited {
     font-size: 3.6rem;
     color: #55c57a;
@@ -467,9 +468,9 @@ header {
   perspective: 150rem;
   -moz-perspective: 15 0rem;
   position: relative;
-  height: 50rem; }
+  height: 55rem; }
   .card__side {
-    height: 50rem;
+    height: 55rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;

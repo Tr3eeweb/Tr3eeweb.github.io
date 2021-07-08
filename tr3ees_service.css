@@ -450,9 +450,9 @@ header {
   perspective: 150rem;
   -moz-perspective: 15 0rem;
   position: relative;
-  height: 50rem; }
+  height: 100rem; }
   .card__side1 {
-    height: 50rem;
+    height: 100rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
