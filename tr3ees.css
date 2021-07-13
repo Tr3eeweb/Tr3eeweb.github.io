@@ -377,7 +377,11 @@ header {
   position: relative;
   font-size: 2.6rem;
   border: none;
+  
   cursor: pointer; }
+ 
+       
+  
 
 .btn1--white {
   background-color: #fff;
@@ -497,9 +501,9 @@ header {
     .card__picture--p1 {
       background-image: url(undraw_static_assets_rpm6.png); }
     .card__picture--p2 {
-      background-image: url(markus-winkler-3hBH-ZuvppU-unsplash.jpg); }
-    .card__picture--p3 {
       background-image: url(undraw_programming_2svra.png); }
+    .card__picture--p3 {
+      background-image: url(linux-151619_6402.png); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;

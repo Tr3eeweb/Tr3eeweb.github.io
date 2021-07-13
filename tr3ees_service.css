@@ -363,10 +363,10 @@ header {
   list-style: none;
   margin-top: 10rem;
   padding: 1.5rem 4rem;
-  border-radius: 10rem;
+  border-radius: 6rem;
   transition: all .2s;
   position: relative;
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   border: none;
   cursor: pointer; }
 
@@ -525,7 +525,7 @@ header {
     text-transform: uppercase; }
   .card__price1--value {
     font-weight: 10;
-    font-size: 1rem; }
+    font-size: 6rem; }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
