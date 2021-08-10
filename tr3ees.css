@@ -20,15 +20,26 @@
   padding: 0;
   box-sizing: border-box; }
 
-html {
+/*html {
   font-size: 62.5%; }
-  @media (max-width: 120rem) {
+  @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media (max-width: 90.25rem) {
     html {
       font-size: 50%; } }
   @media (min-width: 180.5rem) {
+    html {
+      font-size: 75%; } }*/
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 90.25rem) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
@@ -38,6 +49,8 @@ body {
   @media (max-width: 90.25rem) {
     body {
       padding: 0; } }
+
+
 
 @keyframes In-meleft {
   0% {
@@ -100,7 +113,7 @@ body {
     @media (max-width: 60.5rem) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-size: 2rem; } }
+        font-size: 1.4rem; } }
   .heading-primary--sub {
     display: block;
     font-weight: 700;
@@ -111,11 +124,23 @@ body {
     color: color-white;
     text-transform: uppercase;
     margin-bottom: 9rem;
+    display: block;
+    padding: 17px;
+    margin: 0 0 12.5px;
+    font-size: 17px;
+      
+    line-height: 1.42857;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 2px; 
     animation-timing-function: ease-out; }
     @media (max-width: 60.5rem) {
       .heading-primary--sub {
         letter-spacing: .5rem;
-        font-size: 2rem; } }
+        font-size: 1.21rem;}
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -226,7 +251,7 @@ body {
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 120rem) {
+  @media (max-width:120rem) {
     html {
       font-size: 56.25%; } }
   @media (max-width: 90.25rem) {
@@ -370,12 +395,12 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   list-style: none;
-  margin-top: 10rem;
-  padding: 1.5rem 4rem;
+  /*margin-top: 10rem;*/
+  padding: 1.5rem 2rem;
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 2.6rem;
+ /* font-size: 2.6rem;*/
   border: none;
   
   cursor: pointer; }
@@ -503,7 +528,7 @@ header {
     .card__picture--p2 {
       background-image: url(undraw_programming_2svra.png); }
     .card__picture--p3 {
-      background-image: url(linux-151619_6402.png); }
+      background: url(linux-151619_6402.png) top right no-repeat ; }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;

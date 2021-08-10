@@ -90,11 +90,13 @@ body {
     animation-duration: 2s;
     align-items: center;
     color: color-white;
+    margin-top:   2rem;
     animation-timing-function: ease-out; }
     @media (max-width: 60.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-size: 2rem; } }
+        font-size: 2rem;
+        margin-top: 10rem; } }
   .heading-primary--sub {
     display: block;
     font-weight: 700;
@@ -120,9 +122,9 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
-  @media (max-width: 65.5rem) {
+  @media (max-width: 120.5rem) {
     .heading-secondary {
-      margin-top: 25rem;
+      margin-top: 5rem;
       letter-spacing: .5rem;
       font-size: 3rem; } }
   .heading-secondary:hover {
