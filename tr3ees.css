@@ -141,6 +141,7 @@ body {
       .heading-primary--sub {
         letter-spacing: .5rem;
         font-size: 1.21rem;}
+      }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -240,7 +241,7 @@ body {
   margin-top: 20rem; }
 
 .form__group--mod {
-  transform: translateY(-3rem); }
+  transform: translateY(-0rem); }
 
 *,
 *::after,
